@@ -1,0 +1,72 @@
+/* Center the text in the welcome container */
+.welcome-container {
+    display: flex;
+    background-color: #f0c99d;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ font-family:'Times New Roman';
+    text-align: center;
+  }
+  body{
+    font-family:'Times New Roman';
+  }
+  
+  /* Center the content container horizontally and set max-width */
+  .content-container {
+ 
+    background: linear-gradient(to bottom right, #ff9999, #66ccff); /* Gradient background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Vertically align the form elements with equal spacing */
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Remove the max-width and add some padding to the input box */
+  .custom-input {
+    padding:10px;
+    width: 60%;
+  
+  }
+  
+  /* Add full width to the button container */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  /* Set a specific width for the button and add some margin */
+  .custom-button {
+    padding: 10px 20px;
+    background-color: #8fdb63;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Times New Roman';
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  /* Change the button background color on hover */
+  .custom-button:hover {
+    background-color: #00b318;
+  }
