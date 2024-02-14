@@ -1,17 +1,23 @@
+
 <div class="welcome-container">
   <div class="content-container">
     <h1>Welcome</h1>
-    <form id="videoForm" class="form-container">
-      <label for="videoURL">Enter Your YouTube Video URL</label>
-      <input type="text" id="videoURL" [(ngModel)]="urlValue" name="videoURL" class="custom-input" required>
-      <div class="button-container">
-        <button class="custom-button" type="button" (click)="getSubtitles(urlValue)">Generate Summary</button>
-      </div>
-    </form>
+   
 
-    <div id="summaryVideoContainer" style="display:none;">
-      <video width="640" height="360" controls id="summaryVideo">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+    
+<form id="videoForm">
+  <label for="videoURL">Enter YjhjhouTube Video URL:</label>
+  <input type="text" id="videoURL" [(ngModel)]="urlValue" name="videoURL" required>
+  <button type="button" (click)="getSubtitles(urlValue)">Generate Summary</button>
+  </form>
+
+    <div id="summaryVideoContainer" style="">
+  
+  <label for="summaryText">Enter Summary Text:</label>
+  <textarea id="summaryText" [(ngModel)]="summary" name="summaryText" rows="4" cols="50"></textarea>
+
+  <!-- Add play button for text-to-speech -->
+  <button type="button" (click)="playSummary(summary)">Play Summary</button>
+  <input type="text" [(ngModel)]="textToConvert">
+<button (click)="convertAndSave()">Convert & Save Audio</button>
   </div>
