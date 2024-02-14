@@ -8,6 +8,10 @@ import { HomeComponent } from './pages/home/home.component';
 // import { HttpModule
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
+import { TextToSpeechService } from './services/text-to-speech.service'; 
+import { GenerateMp3Service } from './services/generate-mp3.service';
+import { SaveToLocalStorageService } from './services/save-to-local-storage.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +23,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [TextToSpeechService,GenerateMp3Service,SaveToLocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
